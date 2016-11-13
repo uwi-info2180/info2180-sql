@@ -4,9 +4,9 @@
 // to an HTML page.
 
 // Connection
-$host = getenv('IP');
+$host = getenv('IP'); // get the cloud9 host IP
 $dbname = 'simpsons';
-$username = getenv("C9_USER");
+$username = getenv("C9_USER"); // get cloud9 username to connect to database
 $password = '';
 
 //echo $host . ' ' . $username;
