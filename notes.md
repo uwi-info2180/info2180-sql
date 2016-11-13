@@ -15,12 +15,17 @@ WAMP - Windows Apache MySQL and PHP
 ## Cloud 9
 
 ### Start Apache
+To start/stop apache on cloud9 you can use the following commands:
+
 apachectl start
 apachectl stop
 
 ### Start MySQL
+To start/stop MySQL on cloud9 you can use the following commands:
 mysql-ctl start
 mysql-ctl stop
+
+To connect to the MySQL command line interface on Cloud9 use the following command:
 mysql-ctl cli
 
 ### Cloud 9 database info
@@ -38,8 +43,13 @@ SHOW DATABASES;
 ### See all tables
 SHOW TABLES;
 
+### Creating database
+CREATE DATABASE simpsons;
+CREATE DATABASE world;
+
 ### Switch to a datbase
 USE nameofdb;
 
-### Run SQL Script
+### Run SQL Script to load database.
 source simpsons.sql
+source world.sql
