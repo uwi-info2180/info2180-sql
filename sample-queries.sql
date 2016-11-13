@@ -2,7 +2,7 @@
 select * from students;
 
 -- SELECT particular columns
-select name from students;
+select name, email from students;
 
 -- SELECT DISTINCT values
 select student_id from grades;
@@ -10,7 +10,7 @@ select distinct student_id from grades;
 
 -- WHERE CLAUSE
 select * from students where id = 123;
-select * from students where name = "Bart";
+select * from students where name = "Ralph";
 
 -- MULTIPLE WHERE CLAUSES
 select * from grades;
@@ -27,8 +27,8 @@ select * from grades order by grade asc;
 select * from grades order by grade desc;
 
 -- INSERTING ROWS
-insert into students (241, 'Yannick', 'yannick.lynfatt@uwimona.edu.jm', 'awesome');
-insert into students (id, name, email, password) VALUES(689, 'Mary', 'mary.jane@test', 'password123');
+insert into students VALUES(241, 'Tom', 'tom@example.com', 'awesome');
+insert into students (id, name, email, password) VALUES(689, 'Mary', 'mary.jane@test.com', 'password123');
 
 -- UPDATING ROWS
 UPDATE students SET password = 't3st1ng' WHERE id = 689;
