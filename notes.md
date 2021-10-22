@@ -1,55 +1,37 @@
 # SQL Notes
 
 ## Glossary
-SQL - Structured Query Language
-DBMS - DataBase Management System
-LAMP - Linux Apache MySQL and PHP
-WAMP - Windows Apache MySQL and PHP
+
+* SQL - Structured Query Language
+* DBMS - DataBase Management System
+* LAMP - Linux Apache MySQL and PHP
+* WAMP - Windows Apache MySQL and PHP
 
 ## Types of DBMS
-- MySQL (Open source)
-- Oracle (Proprietary) Oracle XE (FREE)
-- Postgres (Open Source)
-- Microsoft SQL Server (Proprietary) MS SQL Server Express
 
-## Cloud 9
+* MySQL (Open source)
+* Oracle (Proprietary) Oracle XE (FREE)
+* Postgres (Open Source)
+* Microsoft SQL Server (Proprietary) MS SQL Server Express
 
-### Start Apache
-To start/stop apache on cloud9 you can use the following commands:
+## See all databases
 
-apachectl start
-apachectl stop
+`SHOW DATABASES;`
 
-### Start MySQL
-To start/stop MySQL on cloud9 you can use the following commands:
-mysql-ctl start
-mysql-ctl stop
+## See all tables
 
-To connect to the MySQL command line interface on Cloud9 use the following command:
-mysql-ctl cli
+`SHOW TABLES;`
 
-### Cloud 9 database info
-Hostname - $IP (The same local IP as the application you run on Cloud9)
-Port - 3306 (The default MySQL port number)
-User - $C9_USER (Your Cloud9 user name)
-Password - "" (No password since you can only access the DB from within the workspace)
-Database - c9 (The database name)
+## Creating database
 
-In PHP you can get the details using getenv('C9_USER') and getenv('IP')
+`CREATE DATABASE simpsons;`
+`CREATE DATABASE world;`
 
-### See all databases
-SHOW DATABASES;
+## Switch to a datbase
 
-### See all tables
-SHOW TABLES;
+`USE nameofdb;`
 
-### Creating database
-CREATE DATABASE simpsons;
-CREATE DATABASE world;
+## Run SQL Script to load database.
 
-### Switch to a datbase
-USE nameofdb;
-
-### Run SQL Script to load database.
-source simpsons.sql
-source world.sql
+`source simpsons.sql`
+`source world.sql`
